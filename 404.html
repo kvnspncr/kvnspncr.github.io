@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Not Found</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>isaqathe.eu.org</h1>
+              <nav>
+            <ul>
+                <li><a href="https://isaqathe.eu.org/index.html">home</a></li>
+                <li><a href="https://isaqathe.eu.org/board">board</a></li>
+                <li><a href="https://isaqathe.eu.org/links.txt">links</a></li>
+                <li><a href="https://isaqathe.eu.org/chat">chat</a></li>
+            </ul>
+        </nav>
+
+        </header>
+
+        <main>
+            <section class="content"> 
+              <h2 style="text-align: left;">404 Not Found</h2>
+                <p id="errorMessage"></p>
+                <p id="userAgent"></p>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        // Get the requested page from the URL
+        const requestedPage = document.location.pathname || 'Unknown';
+        document.getElementById('errorMessage').textContent = `The requested page '${requestedPage}' has not been found on isaqathe.eu.org`;
+
+        // Get the user agent
+        const userAgent = navigator.userAgent || 'Unknown';
+        document.getElementById('userAgent').textContent = `User Agent: ${userAgent}`;
+    </script>
+</body>
+</html>
+
