@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://kevin.h4ck.me/sitemap.xml
