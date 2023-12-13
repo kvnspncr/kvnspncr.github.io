@@ -1,2 +1,3 @@
 User-agent: *
+Disallow: /phpmyadmin/
 Sitemap: https://kevin.h4ck.me/sitemap.xml
