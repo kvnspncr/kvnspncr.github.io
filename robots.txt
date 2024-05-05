@@ -1,2 +1,4 @@
-User-agent: *
-Sitemap: https://kevin.h4ck.me/sitemap.xml
+User-Agent: *
+Allow: /
+Sitemap: https://isaqathe.org/sitemap.xml
+
