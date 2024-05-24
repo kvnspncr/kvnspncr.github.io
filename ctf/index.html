@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -11,19 +12,15 @@
     </style>
     <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
- <link href="/style.css" rel="stylesheet" type="text/css" />
 <body>
-    <hr />
+    <hr/>
     <h1 style="text-align: center;">kevin.h4ck.me</h1>
 
-    <hr />
-    <p style="text-align: center;"><a href="/">index</a></a>&nbsp; -- <a
-            href="/links.txt">links</a> -- <a href="/chat">chat</a>
-    </p>
+    <hr/>
+    <p style="text-align: center;"><a href="/">index</a>&nbsp; -- <a href="/links.txt">links</a> -- <a href="/chat">chat</a></p>
 
-    <p style="text-align:center">&nbsp;&nbsp;<a
-            href="https://discord.com/invite/zC4GyG3awS"
-            target="_blank"><img alt="" src="gih.gif" style="border-top-width:1px;height:25px;width:130px"></a>
+    <p style="text-align: center;">&nbsp;&nbsp;<a href="https://discord.com/invite/zC4GyG3awS" target="_blank">
+        <img alt="" src="gih.gif" style="border-top-width: 1px; height: 25px; width: 130px;"></a>
     </p>
     <style type="text/css">
         img {
@@ -32,25 +29,28 @@
         }
     </style>
     <blockquote>
-    <h3>Solve the puzzle</h3>
-    <p>Enter your name to see a personalized greeting:</p>
-    <form method="GET">
-        <input type="text" name="name" placeholder="Your Name">
-        <input type="submit" value="Submit">
-    </form>
-    <div id="greeting">
-        <p>Hello, <span id="userName"></span>!</p>
-    </div>
-    <div id="flag" style="display: none;">
-        <p>Congratulations! Here is your flag: <strong>FLAG{XSS_ACHIEVED}</strong></p>
-    </div>
-    <script>
-        const urlParams = new URLSearchParams(window.location.search);
-        const name = urlParams.get('name');
-        if (name) {
-            document.getElementById('userName').innerHTML = name;
-        }
-    </script>
-        </blockquote>
+        <h3>Solve the puzzle</h3>
+        <p>Enter your name to see a personalized greeting:</p>
+        <form method="GET">
+            <input type="text" name="name" placeholder="Your Name">
+            <input type="submit" value="Submit">
+        </form>
+        <div id="greeting">
+            <p>Hello, <span id="userName"></span>!</p>
+        </div>
+        <div id="flag" style="display: none;">
+            <p>Congratulations! Here is your flag: <strong>FLAG{XSS_ACHIEVED}</strong></p>
+        </div>
+        <script>
+            const urlParams = new URLSearchParams(window.location.search);
+            const name = urlParams.get('name');
+            if (name) {
+                document.getElementById('userName').innerHTML = name;
+                if (name.includes('<script>')) {
+                    document.getElementById('flag').style.display = 'block';
+                }
+            }
+        </script>
+    </blockquote>
 </body>
 </html>
