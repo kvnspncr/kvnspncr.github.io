@@ -1,4 +1,4 @@
 User-Agent: *
 Allow: /
-Sitemap: https://isaqathe.org/sitemap.xml
+Sitemap: https://kevin.h4ck.me/sitemap.xml
 
